@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926659454717",
+    "project_id": "foodwise-d0a0e",
+    "storage_bucket": "foodwise-d0a0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926659454717:android:4a0d2fedcc066ae3998094",
+        "android_client_info": {
+          "package_name": "com.example.foodwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwSGFbqG6eNdyJ2IYV93pVEvVBBs47z5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

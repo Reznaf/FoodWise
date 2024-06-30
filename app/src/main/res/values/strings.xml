@@ -18,6 +18,7 @@
     <string name="hint_email">example@gmail.com</string>
     <string name="hint_search_food">What do you want to eat?</string>
     <string name="near_you">Near you</string>
+    <string name="recent_food">Recently posted</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="reset_password">Reset Password</string>"
     <string name="reset_password_detail">Please enter your email address to \nrequest a password reset</string>

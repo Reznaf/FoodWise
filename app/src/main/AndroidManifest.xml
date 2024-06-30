@@ -13,6 +13,21 @@
         android:theme="@style/Theme.FoodWise"
         tools:targetApi="31">
         <activity
+            android:name=".FoodDescActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

@@ -9,14 +9,16 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-157dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="20dp"
-            android:gravity="center_vertical">
+            android:padding="20dp">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
@@ -41,7 +43,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/baseline_keyboard_arrow_down_24"/>
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -49,17 +51,17 @@
                     android:id="@+id/location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@null"
                     android:fontFamily="@font/helvetica_normal"
                     android:textColor="@color/green_1"
-                    android:textSize="16sp"
-                    android:background="@null"/>
+                    android:textSize="16sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="100"/>
+                android:layout_weight="100" />
 
             <LinearLayout
                 android:layout_width="56dp"
@@ -88,9 +90,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
                 android:fontFamily="@font/helvetica_normal"
+                android:text="@string/home_quote"
                 android:textSize="36sp"
-                android:textStyle="bold"
-                android:text="@string/home_quote"/>
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -100,16 +102,16 @@
                 <EditText
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
                     android:background="@drawable/search_bar"
                     android:fontFamily="@font/helvetica_normal"
+                    android:hint="@string/hint_search_food"
                     android:inputType="text"
-                    android:hint="@string/hint_search_food" />
+                    android:padding="16dp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_weight="100"/>"
+                    android:layout_weight="100" />"
 
                 <LinearLayout
                     android:layout_width="60dp"
@@ -121,9 +123,9 @@
                     <Button
                         android:layout_width="30dp"
                         android:layout_height="30dp"
+                        android:background="@drawable/baseline_filter_list_24"
                         android:foreground="@drawable/baseline_filter_list_24"
-                        android:foregroundTint="@color/white"
-                        android:background="@drawable/baseline_filter_list_24" />
+                        android:foregroundTint="@color/white" />
 
                 </LinearLayout>
 
@@ -139,22 +141,22 @@
                     android:id="@+id/buy_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:padding="16dp"
                         android:background="@drawable/rounded_rect"
                         android:backgroundTint="@color/green_1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:padding="16dp">
 
                         <ImageButton
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@drawable/baseline_shopping_cart_24"
-                            android:backgroundTint="@color/white"/>
+                            android:backgroundTint="@color/white" />
 
                     </LinearLayout>
 
@@ -162,32 +164,32 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/helvetica_normal"
-                        android:textSize="16sp"
-                        android:text="Cart"/>
+                        android:text="Cart"
+                        android:textSize="16sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_weight="10"
                     android:gravity="center"
-                    android:layout_weight="10">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:padding="16dp"
                         android:background="@drawable/rounded_rect"
                         android:backgroundTint="@color/green_1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:padding="16dp">
 
                         <ImageButton
                             android:id="@+id/sell_button"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@drawable/baseline_paid_24"
-                            android:backgroundTint="@color/white"/>
+                            android:backgroundTint="@color/white" />
 
                     </LinearLayout>
 
@@ -195,8 +197,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/helvetica_normal"
-                        android:textSize="16sp"
-                        android:text="Sell Food"/>
+                        android:text="Sell Food"
+                        android:textSize="16sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -204,22 +206,22 @@
                     android:id="@+id/order_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:padding="16dp"
                         android:background="@drawable/rounded_rect"
                         android:backgroundTint="@color/green_1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:padding="16dp">
 
                         <ImageButton
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@drawable/baseline_sell_24"
-                            android:backgroundTint="@color/white"/>
+                            android:backgroundTint="@color/white" />
 
                     </LinearLayout>
 
@@ -227,8 +229,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/helvetica_normal"
-                        android:textSize="16sp"
-                        android:text="My Orders"/>
+                        android:text="My Orders"
+                        android:textSize="16sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -251,87 +253,251 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/view_all"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-
-
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/food_card"
-                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/near_food_box_1"
-                        android:tag="card"
-                        android:layout_width="180dp"
+                        android:id="@+id/food_card"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="@color/cardview_light_background"
-                        android:padding="10dp"
-                        android:elevation="12dp">
-
-                        <FrameLayout
-                            android:layout_width="160dp"
-                            android:layout_height="140dp">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:id="@+id/food_image"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/card_food"
-                                android:scaleType="centerCrop" />
-
-                        </FrameLayout>
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/food_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/helvetica_normal"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:text="Noodle"/>
+                        android:layout_margin="10dp">
 
                         <androidx.appcompat.widget.LinearLayoutCompat
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:id="@+id/near_food_box_1"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardview_light_background"
+                            android:elevation="12dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:tag="card">
 
+                            <FrameLayout
+                                android:layout_width="160dp"
+                                android:layout_height="140dp">
 
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/food_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/card_food" />
+
+                            </FrameLayout>
 
                             <androidx.appcompat.widget.AppCompatTextView
-                                android:id="@+id/food_price"
+                                android:id="@+id/food_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/helvetica_normal"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:text="Rp. 16000"/>
+                                android:text="Noodle"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/food_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/helvetica_normal"
+                                    android:text="Rp. 16000"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
 
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/food_card_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/near_food_box_2"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardview_light_background"
+                            android:elevation="12dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:tag="card">
+
+                            <FrameLayout
+                                android:layout_width="160dp"
+                                android:layout_height="140dp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/food_image_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/salmon_salad" />
+
+                            </FrameLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/food_name_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_normal"
+                                android:text="Salad"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/food_price_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/helvetica_normal"
+                                    android:text="Rp. 14000"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/food_card_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/near_food_box_3"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardview_light_background"
+                            android:elevation="12dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:tag="card">
+
+                            <FrameLayout
+                                android:layout_width="160dp"
+                                android:layout_height="140dp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/food_image_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/taco" />
+
+                            </FrameLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/food_name_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_normal"
+                                android:text="Taco"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/food_price_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/helvetica_normal"
+                                    android:text="Rp. 18000"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/food_card_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/near_food_box_4"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardview_light_background"
+                            android:elevation="12dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:tag="card">
+
+                            <FrameLayout
+                                android:layout_width="160dp"
+                                android:layout_height="140dp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/food_image_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/pizza" />
+
+                            </FrameLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/food_name_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_normal"
+                                android:text="Pizza"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/food_price_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/helvetica_normal"
+                                    android:text="Rp. 20000"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>

@@ -74,6 +74,34 @@ class HomeActivity : AppCompatActivity() {
             ).toBundle()
             startActivity(intent, options)
         }
+        binding.foodCard2.setOnClickListener(){
+            val intent = Intent(this, FoodDesc2Activity::class.java)
+            val options = ActivityOptionsCompat.makeCustomAnimation(
+                this,
+                R.anim.slide_in_right,
+                R.anim.slide_out_left
+            ).toBundle()
+            startActivity(intent, options)
+        }
+        binding.foodCard3.setOnClickListener(){
+            val intent = Intent(this, FoodDesc3Activity::class.java)
+            val options = ActivityOptionsCompat.makeCustomAnimation(
+                this,
+                R.anim.slide_in_right,
+                R.anim.slide_out_left
+            ).toBundle()
+            startActivity(intent, options)
+        }
+        binding.foodCard4.setOnClickListener(){
+            val intent = Intent(this, FoodDesc4Activity::class.java)
+            val options = ActivityOptionsCompat.makeCustomAnimation(
+                this,
+                R.anim.slide_in_right,
+                R.anim.slide_out_left
+            ).toBundle()
+            startActivity(intent, options)
+        }
+
     }
     
     private fun initLocation() {

@@ -16,6 +16,15 @@
             android:name=".FoodDescActivity"
             android:exported="false" />
         <activity
+            android:name=".FoodDesc2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDesc3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDesc4Activity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
